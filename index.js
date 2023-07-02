@@ -81,10 +81,12 @@ pages.forEach(el => el.onclick = () => {
           let planetImg = document.querySelector('.planetImg');
           let destTitle = document.querySelector('.destTitle')
           let desc = document.querySelector('.desc')
+          let dist = document.querySelector('.dist')
           destinationsList.forEach((de,i) => de.onclick = () => {
             destTitle.innerHTML = de.innerHTML;
             planetImg.src = savedata.destinations[i].images.png;
             desc.innerHTML = savedata.destinations[i].description;
+            dist.innerHTML = savedata.destinations[i].distance;
           })
           break;
 
